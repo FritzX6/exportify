@@ -336,7 +336,8 @@ var PlaylistExporter = {
             item.track.track_number,
             item.track.duration_ms,
             item.added_by == null ? '' : item.added_by.uri,
-            item.added_at
+            item.added_at,
+            item.track.album.release_date
           ].map(function(track) { return '"' + track + '"'; })
         });
       });
@@ -353,7 +354,8 @@ var PlaylistExporter = {
         "Track Number",
         "Track Duration (ms)",
         "Added By",
-        "Added At"
+        "Added At",
+        "Release Date"
       ]);
 
       csvContent = '';
