@@ -4,7 +4,7 @@ window.Helpers = {
 
     // Use Exportify application client_id if none given
     if (client_id == '') {
-      client_id = "9950ac751e34487dbbe027c4fd7f8e99"
+      client_id = "a834d3c55b0a47e1aa1b2550b131d4fd"
     }
 
     window.location = "https://accounts.spotify.com/authorize" +
